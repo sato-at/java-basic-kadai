@@ -21,7 +21,7 @@ public class Dictionary_Chapter21 {
 
 		String meaning = dictionaryList.get(word);
 
-		if(meaning != null) {
+		if(dictionaryList.containsKey(word)) {
 			System.out.println(word + "の意味は" + meaning);
 		}else {
 			System.out.println(word + "は辞書に存在しません");
